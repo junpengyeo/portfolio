@@ -51,7 +51,7 @@
         <ul class='slides'>
           <li class='slide dark'>
             <section class='jumbotron'>
-              <div class='bg' style='background-image:url(images/projects/cleanse/render1.jpg);'></div>
+              <div class='bg' style='background-image:url(images/projects/cleanse/render11.jpg);'></div>
           </li>
             </section>
         </ul>
@@ -109,17 +109,63 @@
           </div>
           <div class='row'>
             <div class='col-md-12'>
-              <h3>Introducing Perry</h3>
-              <img src="images/projects/perry/hero3.png" />
-              <p>An integrated rehabilitation system that holistically engages patients, and empowers therapists in the rehab setting. Simply put, Perry is like using a mouse in the air! Utilizing a Bluetooth connection, it translates a simple pinch to a click on the screen, and using infrared tracking, a reaching motion as the movement of the mouse. All these come together to enable Perry to be used on various mouse-based games, effectively engaging patients during rehabilitation.</p>
+              <div>
+                <div style="float: right">
+                  <button onclick="plusDivs(-1)"style="border:0">&#10094;</button>
+                  <button onclick="plusDivs(1)" style="border:0">&#10095;</button>
+                </div>
+                <div>
+                <h3>Introducing Cleanse</h3>
+                <img class="mySlides" src="images/projects/cleanse/hero2.jpg" style="width:100%">
+                <img class="mySlides" src="images/projects/cleanse/hero4.jpg" style="width:100%">
+                </div>
+                <p>Cleanse is a hygiene compliance software that cultivates healthy hand hygiene habits through proper guidance and reminders. It can be deployed in mulitple context - handwashing and hand sanitising. Cleanse is also built with businesses in mind.</p>
+                <div class='col-md-3'>
+                  <div class='text-center'>
+                    <i class="fa fa-laptop fa-2x"></i>
+                  </div>
+                  <p style="text-align: center;">Compliant with world industry hygiene standards</p>
+                </div>
+                <div class='col-md-3 col-md-offset-1'>
+                  <div class='text-center'>
+                    <i class="fa fa-plug fa-2x"></i>
+                  </div>
+                  <p style="text-align: center;">Easy and seamless integration with existing infrastructure</p>
+                </div>
+                <div class='col-md-3 col-md-offset-1'>
+                  <div class='text-center'>
+                    <i class="fa fa-puzzle-piece fa-2x"></i>
+                  </div>
+                  <p style="text-align: center;">Customizable hand hygiene practices</p>
+                </div>
+                </div>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>  
             </div>
           </div>
           <div class='row'>
             <div class='col-md-5'>
               <div class='block'>
-                <h3>Game Curation</h3>
-                <p>At the startup menu, patients will be able to select the difficulty level of the rehabilitation that best suit their needs. </p> 
-                <p>Patients will then select from a list of curated games to begin the rehabilitation session.</p>
+                <h3>How It Works</h3>
+                <p>The Cleanse prototype utilizes multiple machine learning algorithms and models to track and guide users through various handwashing actions.</p>
+                <p>Through bluetooth, the micro bit receives signals through the cloud, communicating with and activating the lighting system, signaling to users when each step is completed.</p> 
               </div>
             </div>
             <div class='col-md-7 block'>
@@ -128,9 +174,8 @@
                   <button onclick="plusDivs3(-1)"style="border:0">&#10094;</button>
                   <button onclick="plusDivs3(1)" style="border:0">&#10095;</button>
                 </div>
-                <img class="mySlides3" src="images/projects/perry/ui0.png" style="width:100%">
-                <img class="mySlides3" src="images/projects/perry/ui1.png" style="width:100%">
-                <img class="mySlides3" src="images/projects/perry/ui2.png" style="width:100%">
+                <img class="mySlides3" src="images/projects/cleanse/demo1.jpg" style="width:100%">
+                <img class="mySlides3" src="images/projects/cleanse/demo2.jpg" style="width:100%">
               </div>
               <script>
                 var slideIndex3 = 1;
@@ -160,9 +205,9 @@
                   <button onclick="plusDivs4(-1)"style="border:0">&#10094;</button>
                   <button onclick="plusDivs4(1)" style="border:0">&#10095;</button>
                 </div>
-                <img class="mySlides4" src="images/projects/perry/ui3.png" style="width:100%">
-                <img class="mySlides4" src="images/projects/perry/ui4.png" style="width:100%">
-                <img class="mySlides4" src="images/projects/perry/ui5.png" style="width:100%">
+                <img class="mySlides4" src="images/projects/cleanse/ui.png" style="width:100%">
+                <img class="mySlides4" src="images/projects/cleanse/ui-3.png" style="width:100%">
+                <img class="mySlides4" src="images/projects/cleanse/ui-5.png" style="width:100%">
               </div>
               <script>
                 var slideIndex4 = 1;
@@ -185,26 +230,24 @@
                 </script>   
             </div>
             <div class='col-md-5'>
-              <div class='block'>
-                <h3>Progress Report</h3>
-                <p>Data collected at the end of each rehabilitation session will be visualised on the therapist's dashboard. On the dashboard, therapists can track the number of repetitions performed, duration of breaks taken and the patient's range of motion.</p>
-                <p>With these information, the therapists can better track the progress of each patient and tailor the rehabilitation exercises to their specific needs.</p>
+              <div class='block' style="margin-top: 2em;">
+                <h3>Seamless Integration</h3>
+                <p>Cleanse integrates seamlessly into any business’ existing employee management system, serving as a plug-in to help track and ensure good hand hygiene compliance. </p>
+                <p>With these information, businesses can better track the hygiene standards of their employees and conduct appropriate hygiene trainings, should there be a need.</p>
               </div>
             </div>
           </div>
           <div class='row'>
             <div class='col-md-8 col-md-offset-2'>
-              <div class='text-center'><h3>User Testing</h3></div>
-              <div style="float: right">
+              <!-- <div class='text-center'><h3>User Testing</h3></div> -->
+              <!-- <div style="float: right">
                 <button onclick="plusDivs5(-1)"style="border:0">&#10094;</button>
                 <button onclick="plusDivs5(1)" style="border:0">&#10095;</button>
-              </div>
+              </div> -->
               <div>
-                <img class="mySlides5" src="images/projects/perry/usertest3.gif" style="width:100%">
-                <img class="mySlides5" src="images/projects/perry/usertest1.JPG" style="width:100%">
-                <img class="mySlides5" src="images/projects/perry/usertest2.JPG" style="width:100%">
+                <img src="images/projects/cleanse/context.gif" style="width:100%">
               </div>
-              <script>
+              <!-- <script>
                 var slideIndex5 = 1;
                 showDivs5(slideIndex5);
                 
@@ -222,7 +265,7 @@
                   }
                   x[slideIndex5-1].style.display = "block";  
                 }
-              </script>   
+              </script>    -->
             </div>
           </div>
           <div class='block text-center'>

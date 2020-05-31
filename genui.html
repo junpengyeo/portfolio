@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jun Peng's Portfolio</title>
+    <title>Jun Peng</title>
     <meta charset='utf-8'>
     <meta content='Description' name=''>
     <meta content='1 day' name='revisit-after'>
@@ -47,33 +47,46 @@
           </ul>
         </section>
       </header>
-      <section class='jumbotron'>
-        <div class='bg' style='background-image:url(images/projects/perry/hero2.png);'></div>
-      </section>
+      <div class='slider'>
+        <ul class='slides'>
+          <li class='slide'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/genui/img/img3.gif);'></div>
+              <section>
+              <div class='row'>
+                <div class='col-md-12 text-center'>
+                  <h1 style='font-size: 36pt;'>GenUI</h1>
+                </div>
+              </div>
+              </section>
+            </section>
+          </li>  
+        </ul>
+      </div>    
       <section class='wide'>
         <div class='block'>
           <div class='row'>
             <div class='col-md-6'>
-              <h4>Perry</h4>
-              <p>Perry is a rehabilitation system helping stroke and Parkinson’s patients regain the use of shoulder reach and finger pinch abilities. Featuring a wireless ‘pinch’ controller that moves a cursor to play a list of curated games, Perry challenges cognitive abilities, ensuring patient engagement throughout rehab.</p>
+              <h4>GenUI</h4>
+              <p>A speculative look at what web interfaces could look in the future. As algorithms get better at recognising and predicting patterns in our behaviors, how could that impact our experiences online? For this project, I looked into the economist website as an example.</p>
             </div>
             <div class='col-md-2 col-md-offset-2'>
               <h4>Client</h4>
-              <p>AWWA</p>
+              <p>-</p>
               <h4>Created</h4>
-              <p>2019</p>
+              <p>2020</p>
             </div>
             <div class='col-md-2'>
               <h4>Role</h4>
-              <p>Designer,<br>Software Engineer</p>
+              <p>Front-end Designer</p>
             </div>
           </div>
           <div>
             <div class='col-md-1 col-md-offset-10'>
-              <img src="images/projects/perry/logo2.jpg" style="width:100%">
+              <img src="images/projects/genUI/html.png" style="width:100%">
             </div>
             <div class='col-md-1'>
-              <img src="images/projects/perry/logo1.jpg" style="width:100%">
+              <img src="images/projects/genUI/figma.png" style="width:100%">
             </div>
           </div>
         </div>
@@ -83,9 +96,10 @@
           <div class='row'>
             <div class='col-md-5'>
               <div class='block'>
-                <h3>The Problem</h3>
-                <p>Health complications such as stroke, Parkinson's and Alzheimers results in many patients to <b>lose muscle strength and coordination in their fingers and shoulders.</b></p> 
-                <p>While undergoing rehabilitation, many patients <b>lose motivation and compromise on the rehabilitation exercise</b> over time.</p>
+                <h3>Current Web Interfaces</h3>
+                <p>While advertisements and web contents become more and more targeted and personalised, web interfaces continues to remain stagnant.</p> 
+                <p>How one browses their web contents, what they interact with on the site and when they interact with it, everyone's website layout would look largely the same.</p>
+                <p>On your right, you can see three screen captures of the economist website over a period of three months. There is little to no changes to its user interface.</p>
               </div>
             </div>
             <div class='col-md-7 block'>
@@ -94,8 +108,9 @@
                   <button onclick="plusDivs(-1)"style="border:0">&#10094;</button>
                   <button onclick="plusDivs(1)" style="border:0">&#10095;</button>
                 </div>
-                <img class="mySlides" src="images/projects/perry/elderly2.jpg" style="width:100%">
-                <img class="mySlides" src="images/projects/perry/elderly1.jpg" style="width:100%">
+                <img class="mySlides" src="images/projects/genUI/jan.png" style="width:100%">
+                <img class="mySlides" src="images/projects/genUI/feb.png" style="width:100%">
+                <img class="mySlides" src="images/projects/genUI/march.png" style="width:100%">
               </div>
               <script>
                 var slideIndex = 1;
@@ -121,159 +136,55 @@
           <div class='row'>
             <div class='col-md-7 block' >
               <div>
-                <div style="float: right">
-                  <button onclick="plusDivs2(-1)"style="border:0">&#10094;</button>
-                  <button onclick="plusDivs2(1)" style="border:0">&#10095;</button>
-                </div>
-                <img class="mySlides2" src="images/projects/perry/prototype1.jpg" style="width:100%">
-                <img class="mySlides2" src="images/projects/perry/prototype2.gif" style="width:100%">
-                <img class="mySlides2" src="images/projects/perry/prototype.jpg" style="width:100%">
-                <img class="mySlides2" src="images/projects/perry/prototype4.1.jpg" style="width:100%"">
+                <img src="images/projects/genUI/transitionhd.gif" />  
               </div>
-              <script>
-                var slideIndex2 = 1;
-                showDivs2(slideIndex2);
-                
-                function plusDivs2(n) {
-                  showDivs2(slideIndex2 += n);
-                }
-                
-                function showDivs2(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides2");
-                  if (n > x.length) {slideIndex2 = 1}
-                  if (n < 1) {slideIndex2 = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex2-1].style.display = "block";  
-                }
-                </script>   
             </div>
             <div class='col-md-5'>
               <div class='block'>
-                <h3>Prototyping</h3>
-                <p>To effectively address the problem, we iterated through many different ways of tracking the main motions of the rehabilitation exercise - pinching and shoulder reach - such as <b>graphite circuit, capacitive plates sensing, depth sensing and color tracking.</b></p>
-                <p>Eventually, we settled on using the Kinect as our main sensor as it has an <b>accurate tracking and is able to collect meaningful data</b> for an effective and targeted rehab session.</p>
+                <h3>Development</h3>
+                <p>What if web interfaces adapt and change overtime according to the user's behavior? For instance, if a user uses a search bar frequently, could the search bar take up a more prominent position on the site layout? If a user interacts more with images than text, could the site change to display more images?</p>
               </div>
             </div>
           </div>
           <div class='row'>
             <div class='col-md-12'>
-              <h3>Introducing Perry</h3>
-              <img src="images/projects/perry/hero3.png" />
-              <p>An integrated rehabilitation system that holistically engages patients, and empowers therapists in the rehab setting. Simply put, Perry is like using a mouse in the air! Utilizing a Bluetooth connection, it translates a simple pinch to a click on the screen, and using infrared tracking, a reaching motion as the movement of the mouse. All these come together to enable Perry to be used on various mouse-based games, effectively engaging patients during rehabilitation.</p>
+              <h3>Introducing GenUI</h3>
+              <video width="100%"" controls>
+                <source src="images/projects/genUI/demo2.mp4" type="video/mp4">
+            </div> 
+            <div>
+              <ul>
+              <p>A reimagined user interface that adapts to a user's browsing behavior to deliver greater and more relevant interface for users over time. The video depicts one way in which an interface could change if a user has a habit of using the search bar when visiting the economist website.</p>
+              </ul>
             </div>
           </div>
           <div class='row'>
-            <div class='col-md-5'>
-              <div class='block'>
-                <h3>Game Curation</h3>
-                <p>At the startup menu, patients will be able to select the difficulty level of the rehabilitation that best suit their needs. </p> 
-                <p>Patients will then select from a list of curated games to begin the rehabilitation session.</p>
-              </div>
-            </div>
-            <div class='col-md-7 block'>
-              <div>
-                <div>
-                  <button onclick="plusDivs3(-1)"style="border:0">&#10094;</button>
-                  <button onclick="plusDivs3(1)" style="border:0">&#10095;</button>
+            <div class='col-md-12 block'>
+              <div class="row">
+                <h3>Other Possibilities</h3>
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/genUI/searchbar/searchbar.gif" style="width:100%">
+                <p>Interface changing to a user's habit of using the search bar</p>
                 </div>
-                <img class="mySlides3" src="images/projects/perry/ui0.png" style="width:100%">
-                <img class="mySlides3" src="images/projects/perry/ui1.png" style="width:100%">
-                <img class="mySlides3" src="images/projects/perry/ui2.png" style="width:100%">
-              </div>
-              <script>
-                var slideIndex3 = 1;
-                showDivs3(slideIndex3);
-                
-                function plusDivs3(n) {
-                  showDivs3(slideIndex3 += n);
-                }
-                
-                function showDivs3(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides3");
-                  if (n > x.length) {slideIndex3 = 1}
-                  if (n < 1) {slideIndex3 = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex3-1].style.display = "block";  
-                }
-                </script>            
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-7 block' >
-              <div>
-                <div style="float: right">
-                  <button onclick="plusDivs4(-1)"style="border:0">&#10094;</button>
-                  <button onclick="plusDivs4(1)" style="border:0">&#10095;</button>
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/genUI/drop/drop.gif" style="width:100%">
+                <p>Interface changing to a user's habit of using the drop down</p>
+                </div>  
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/genUI/img/img.gif" style="width:100%">
+                <p>Interface changing to a user's habit of selecting image elements</p>
                 </div>
-                <img class="mySlides4" src="images/projects/perry/ui3.png" style="width:100%">
-                <img class="mySlides4" src="images/projects/perry/ui4.png" style="width:100%">
-                <img class="mySlides4" src="images/projects/perry/ui5.png" style="width:100%">
-              </div>
-              <script>
-                var slideIndex4 = 1;
-                showDivs4(slideIndex4);
-                
-                function plusDivs4(n) {
-                  showDivs4(slideIndex4 += n);
-                }
-                
-                function showDivs4(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides4");
-                  if (n > x.length) {slideIndex4 = 1}
-                  if (n < 1) {slideIndex4 = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex4-1].style.display = "block";  
-                }
-                </script>   
-            </div>
-            <div class='col-md-5'>
-              <div class='block'>
-                <h3>Progress Report</h3>
-                <p>Data collected at the end of each rehabilitation session will be visualised on the therapist's dashboard. On the dashboard, therapists can track the number of repetitions performed, duration of breaks taken and the patient's range of motion.</p>
-                <p>With these information, the therapists can better track the progress of each patient and tailor the rehabilitation exercises to their specific needs.</p>
-              </div>
+              </div>  
             </div>
           </div>
-          <div class='row'>
-            <div class='col-md-8 col-md-offset-2'>
-              <div class='text-center'><h3>User Testing</h3></div>
-              <div style="float: right">
-                <button onclick="plusDivs5(-1)"style="border:0">&#10094;</button>
-                <button onclick="plusDivs5(1)" style="border:0">&#10095;</button>
-              </div>
-              <div>
-                <img class="mySlides5" src="images/projects/perry/usertest3.gif" style="width:100%">
-                <img class="mySlides5" src="images/projects/perry/usertest1.JPG" style="width:100%">
-                <img class="mySlides5" src="images/projects/perry/usertest2.JPG" style="width:100%">
-              </div>
-              <script>
-                var slideIndex5 = 1;
-                showDivs5(slideIndex5);
-                
-                function plusDivs5(n) {
-                  showDivs5(slideIndex5 += n);
-                }
-                
-                function showDivs5(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides5");
-                  if (n > x.length) {slideIndex5 = 1}
-                  if (n < 1) {slideIndex5 = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex5-1].style.display = "block";  
-                }
-              </script>   
+          <div class='row block'>
+            <div class='col-md-6'>
+              <video width="100%"" controls>
+              <source src="images/projects/genUI/time.mp4" type="video/mp4">
+            </div>
+            <div class='col-md-5 col-md-offset-1'>
+              <h3>Considerations</h3>
+              <p>One of the most important principles of a good user interface is the notion of consistency. With the implementation of an everchanging personalised user interface, there may be a point of diminishing return. As such, users should be given the power to control and select the interface in which they prefer.</p>
             </div>
           </div>
           <div class='block text-center'>
@@ -292,7 +203,7 @@
         </div>
         <ul class='col-3' id='grid'>
           <li class='item'>
-            <a class='inner' href='#' style='background:url(images/projects/cleanse/render1.jpg);'>
+            <a class='inner' href='cleanse.html' style='background:url(images/projects/cleanse/render1.jpg);'>
               <div class='caption'>
                 <div class='field'>
                   Coding + Design + Interface
@@ -305,7 +216,7 @@
             </a>
           </li>
           <li class='item coding generative'>
-            <a class='inner' href='#' style='background:url(images/projects/genforms/test3.gif);'>
+            <a class='inner' href='genforms.html' style='background:url(images/projects/genforms/test3.gif);'>
               <div class='caption'>
                 <div class='field'>
                   Coding + Generative
@@ -317,15 +228,15 @@
               </div>
             </a>
           </li>
-          <li class='item generative interface '>
-            <a class='inner' href='#' style='background:url(images/projects/genUI/transition/transition.gif); background-color: #eeeeee;'>
+          <li class='item coding design interface'>
+            <a class='inner' href='perry.html' style='background:url(images/projects/perry/hero3.png);'>
               <div class='caption'>
                 <div class='field'>
-                  Generative + Interface
+                  Coding + Design + Interface
                 </div>
                 <div class='titles'>
-                  <div class='title'>Rethinking User Interface</div>
-                  <div class='subtitle'>Generative UI</div>
+                  <div class='title'>Perry</div>
+                  <div class='subtitle'>Rehab Reimagined</div>
                 </div>
               </div>
             </a>

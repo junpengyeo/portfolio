@@ -1264,3 +1264,25 @@ header {
 .mySlides3 {display:none;}
 .mySlides4 {display:none;}
 .mySlides5 {display:none;}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: #888888;
+  border: 2px solid #888888;
+}
+
+.button1:hover {background-color: #888888; color: white;}

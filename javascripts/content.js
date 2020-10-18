@@ -26,7 +26,7 @@ header.innerHTML = `        <section>
     </ul>
   </li>
   <li>
-    <a class='anchor' href='index.html #work'>Portfolio</a>
+    <a class='anchor' href='index.html#work'>Portfolio</a>
   </li>
   <li>
     <a class='anchor' href='#contact'>Contact</a>

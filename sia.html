@@ -24,19 +24,34 @@
     <div class='container-fluid'>
       <header data-spy='affix'id="menuheader">
       </header>
-      <section class='jumbotron'>
-        <div class='bg' style='background-image:url(images/projects/genpatterns/logo1.jpg);'></div>
-      </section>
+      <div class='slider'>
+        <ul class='slides'>
+          <li class='slide dark'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/sia/dashboard-ipad.jpg)'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1 style='font-size: 36pt;'>KrisCrew</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+            </section>
+        </ul>
+      </div>    
       <section class='wide'>
         <div class='block'>
           <div class='row'>
             <div class='col-md-6'>
-              <h4>Pattern Generation</h4>
-              <p>This project is designed for Arts@Metta to enhance the corporate value and commercialbility of the organisation's product offerings. A corporate logo is used as a starting point for the design, first being dissected and then distributed randomly using an algorithm, generating an countless pattern possibilties.</p>
+              <h4>KrisCrew</h4>
+              <p>An in-flight solution that enhances passenger experience and streamlines
+                service requests for the airline through smart data analysis.</p>
             </div>
             <div class='col-md-2 col-md-offset-2'>
               <h4>Client</h4>
-              <a href='https://www.metta.org.sg/hq/index.php/our-services/artmetta/'><p>Arts @ Metta</p></a>
+              <p>-</p>
               <h4>Created</h4>
               <p>2020</p>
             </div>
@@ -46,8 +61,17 @@
             </div>
           </div>
           <div style="padding-bottom: 1rem;">
-            <div class='col-md-1 col-md-offset-11'>
-              <img src="images/projects/genpatterns/ai.png" style="width:100%">
+            <div class='col-md-1 col-md-offset-8'>
+              <img src="images/projects/sia/ae.jpg" style="width:100%">
+            </div>
+            <div class='col-md-1'>
+              <img src="images/projects/sia/pr.jpg" style="width:100%">
+            </div>
+            <div class='col-md-1'>
+              <img src="images/projects/sia/ai.png" style="width:100%">
+            </div>
+            <div class='col-md-1'>
+              <img src="images/projects/sia/figma.png" style="width:100%">
             </div>
           </div>
         </div>
@@ -55,89 +79,94 @@
       <section class='wide gray'>
         <div class='block'>
           <div class='row'>
+            <div class='col-md-12 block'>
+              <div class="title-block">
+              <h3>Identified Problems</h3>
+              </div>
+              <div class="row">
+                <div class='col-md-4 col-md-offset-1 text-center'>
+                  <i class='icon fa fa-plane title-block' style="font-size:64px"></i>
+                <h3 style="font-size: 15pt">Overwhelming in-flight requests pose a challenge to cabin crew</h3>
+                </div>
+                <div class='col-md-4 col-md-offset-1 text-center'>
+                  <i class='icon fa fa-user title-block' style="font-size:64px;"></i>
+                <h3 style="font-size: 15pt">Lack of customer engagement due to limited crew-to-passenger ratio</h3>
+                </div>  
+              </div>  
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-12'>
+              <h3>Introducing KrisCrew</h3>
+              <video width="100%"" controls>
+                <source src="images/projects/sia/SIA.mp4" type="video/mp4">
+            </div> 
+            <div>
+              <ul>
+              <p></p>
+              </ul>
+            </div>
+          </div>
+          <div class='row'>
             <div class='col-md-5'>
               <div class='block'>
-                <h3>Logo Extraction</h3>
-                <p>Three or more different shapes are first extracted from the corporate logo which will be used by the algorithm as elements for the pattern design.</p> 
-                <p>With the extracted elements, the algorithm will apply multiple random parameters such as scale, rotation, quantities and spacing to them before being distributed as a pattern as shown.</p>
+                <h3>Value Propositions</h3>
+                <p>Removes the need for manual order taking by memory</p>
+                <p>Collates similar orders for exonomy of movement during service delivery</p>
+                <p>Incorporates data when generating real-tim service prompts to maximuse customer touchpoints at suitable timings</p>
+                <p>Recognises peak periods and uses behavioural prompts to spread out customer requests over non-peak periods</p> 
               </div>
             </div>
             <div class='col-md-7 block'>
               <div>
-                <img src="images/projects/genpatterns/algo-long.gif" style="width:100%">
-              </div>           
-            </div>
-          </div>
-          <div class='row block'>
-            <div class='col-md-12'>
-              <div>
-                <h3>Distributed Patterns</h3>
-                <img class="mySlides2" src="images/projects/genpatterns/logo2.jpg" style="width:100%">
-                <img class="mySlides2" src="images/projects/genpatterns/logo1.jpg" style="width:100%">
-                <img class="mySlides2" src="images/projects/genpatterns/logo3.jpg" style="width:100%">
-              </div>
-              <div>
-                <button onclick="plusDivs2(-1)"style="border:0">&#10094;</button>
-                <button onclick="plusDivs2(1)" style="border:0">&#10095;</button>
+                <div>
+                  <button onclick="plusDivs(-1)"style="border:0">&#10094;</button>
+                  <button onclick="plusDivs(1)" style="border:0">&#10095;</button>
+                </div>
+                <img class="mySlides" src="images/projects/sia/QR scan1.png" style="width:100%">
+                <img class="mySlides" src="images/projects/sia/QR Scan2.jpg" style="width:100%">
               </div>
               <script>
-                var slideIndex2 = 1;
-                showDivs2(slideIndex2);
+                var slideIndex = 1;
+                showDivs(slideIndex);
                 
-                function plusDivs2(n) {
-                  showDivs2(slideIndex2 += n);
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
                 }
                 
-                function showDivs2(n) {
+                function showDivs(n) {
                   var i;
-                  var x = document.getElementsByClassName("mySlides2");
-                  if (n > x.length) {slideIndex2 = 1}
-                  if (n < 1) {slideIndex2 = x.length}
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
                   for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";  
                   }
-                  x[slideIndex2-1].style.display = "block";  
+                  x[slideIndex-1].style.display = "block";  
                 }
-                </script>   
+                </script>            
             </div>
           </div>
           <div class='row'>
-            <div class='col-md-6 block' >
-              <div>
-                <div style="float: right">
-                  <button onclick="plusDivs4(-1)"style="border:0">&#10094;</button>
-                  <button onclick="plusDivs4(1)" style="border:0">&#10095;</button>
+            <div class='col-md-12 block'>
+              <div class="row">
+                <h3>Data-Driven Opportunities</h3>
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/sia/1.png" style="width:100%">
+                <h3 style="font-size: 15pt">1. Smart Demand Management</h3>
+                <p>Control service requests demand through thoughtful behavioral nudges</p>
                 </div>
-                <img class="mySlides4" src="images/projects/genpatterns/vase-hero.jpg" style="width:100%">
-                <img class="mySlides4" src="images/projects/genpatterns/vase-small.jpg" style="width:100%">
-                <img class="mySlides4" src="images/projects/genpatterns/frames-hero.jpg" style="width:100%">
-                <img class="mySlides4" src="images/projects/genpatterns/frames-small.jpg" style="width:100%">
-              </div>
-              <script>
-                var slideIndex4 = 1;
-                showDivs4(slideIndex4);
-                
-                function plusDivs4(n) {
-                  showDivs4(slideIndex4 += n);
-                }
-                
-                function showDivs4(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides4");
-                  if (n > x.length) {slideIndex4 = 1}
-                  if (n < 1) {slideIndex4 = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex4-1].style.display = "block";  
-                }
-                </script>   
-            </div>
-            <div class='col-md-6'>
-              <div class='block'>
-                <h3>Product Examples</h3>
-                <p>These printed patterns can be integrated into Metta's exisiting product lines to increase the corporate attractiveness of their products. For instance, the DBS logo can be imprinted on to their pottery vases to create a uniquely DBS branded vase or a picture from for Allianz. </p>
-              </div>
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/sia/2.png" style="width:100%">
+                <h3 style="font-size: 15pt">2. Real-time service prompts</h3>
+                <p>Enhanced service delivery by cabin crew though personalised actionable insights</p>
+                </div>  
+                <div class='col-md-4 text-center'>
+                <img src="images/projects/sia/3.png" style="width:100%">
+                <h3 style="font-size: 15pt">3. Inventory Optimisation</h3>
+                <p>Clarity over inventory management enables smart cost-effective optimisation</p>
+                </div>
+              </div>  
             </div>
           </div>
           <div class='block text-center'>
@@ -181,15 +210,15 @@
               </div>
             </a>
           </li>
-          <li class='item generative interface '>
-            <a class='inner' href='ui.html' style='background:url(images/projects/genUI/transition/transition.gif); background-color: #eeeeee;'>
+          <li class='item coding design interface'>
+            <a class='inner' href='perry.html' style='background:url(images/projects/perry/hero3.jpg);'>
               <div class='caption'>
                 <div class='field'>
-                  Generative + Interface
+                  Coding + Design + Interface
                 </div>
                 <div class='titles'>
-                  <div class='title'>Rethinking User Interface</div>
-                  <div class='subtitle'>Generative UI</div>
+                  <div class='title'>Perry</div>
+                  <div class='subtitle'>Rehab Reimagined</div>
                 </div>
               </div>
             </a>

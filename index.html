@@ -22,8 +22,10 @@
   </head>
   <body>
     <div class='container-fluid'>
+      <section class="title-block">
       <header data-spy='affix'id="menuheader">
       </header>
+      </section>
       <!-- <div class='slider'>
         <ul class='slides'>
           <li class='slide'>
@@ -179,39 +181,93 @@
           </li>
         </ul>
       </section> -->
-      <section class="block">
-        <div class="text-center" style="margin-top: 5rem;">
-        <h3>About Me</h3>
-        </div>
-      </section>
-      <section id='about' style="margin-top: -5rem;">
+      <section id='about'>
         <div class="row block">
           <div class='col-md-10 col-md-offset-1'>
             <div class="text-center">
-              <img src="images/projects/general/photo222.jpg" style="width: 60%; border-radius: 50%; "></img>
-              <h4 style="font-size: 12pt; margin: 2rem; line-height: 2rem;">
-                <b>Name: </b>Jun Peng<br>
-                <b>Major: </b>Industrial Design<br>
-                <b>Age: </b>23<br><br>
-              </h4>
+              <div class="title-block">
+              <h3>Hi There!</h3>
+              </div>
+              <img src="images/projects/general/photo222.jpg" style="width: 50%; border-radius: 50%; "></img>
+              <h4 style="font-size: 20pt; padding: 2rem; line-height: 2rem;" class="typewrite" data-period="2000" data-type='[ "I am Jun Peng.", "I am a Designer.", "I am a Coder.", "I am an Entrepreneur."]'>
+              </h4>              
             </div>
-            <p>
-              Passionate about taking steps towards solving real world issues through innovation and entrepreneurship.
-              Firmly believes in the power of design and technology in creating positive change.
-              Always looking to challenge and improve myself through new and exhilarating experiences.
-            </p>
             <div class='text-center'>
+              <p>
+                Passionate about taking steps towards solving real world issues through innovation and entrepreneurship.
+                Firmly believes in the power of design and technology in creating positive change.
+                Always looking to challenge and improve myself through new and exhilarating experiences.
+              </p>
               <a class="button button1 anchor" href="personalstatement.html">Read More</a>
             </div>
           </div>
         </div>
       </section>
-     
+      
+      <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+
       <section class="title-block">
         <div class='row'>
-          <div class="col-md-12 text-center">
-          </div>
-          <div class="col-md-12">
+        <div class="col-md-12 text-center">
+        </div>
+        <div class="col-md-12">
             <h5>Adobe Creative Suite</h5>
             <div class='progress'>
               <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='95' class='progress-bar progress-bar-danger' role='progressbar' style='width: 90%'></div>
@@ -291,6 +347,7 @@
           </div>
         </div>
       </section>
+      
       <footer>
         <section class='text-center'>
           <div class='social'>

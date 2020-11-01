@@ -1,7 +1,7 @@
 const header = document.getElementById('menuheader');
-const contact = document.getElementById('contact')
+const contact = document.getElementById('contact');
 
-header.innerHTML = `        <section>
+header.innerHTML = `<section>
 <a class='brand' href='index.html'>
   Jun Peng
 </a>
@@ -34,7 +34,7 @@ header.innerHTML = `        <section>
 </ul>
 </section>`;
 
-contact.innerHTML=`        <div class='block'>
+contact.innerHTML=`<div class='block'>
 <div class='row'>
   <div class='col-md-4'>
     <div class='row'>

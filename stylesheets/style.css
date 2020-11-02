@@ -522,7 +522,7 @@ textarea.form-element {
         #navigation li:hover ul li {
           padding: 0; }
           #navigation li:hover ul li:hover {
-            background: #403E3B; }
+            background: #505690; }
   @media screen and (max-width: 767px) {
     #navigation {
       padding: 5px 0;
@@ -761,14 +761,20 @@ a.blog-item {
     padding: 0 !important; }
 
 .contact p {
-  margin: 0 0 6px; }
+  margin: 0 0 6px;
+  color: #505690; }
+
+.contact p a {
+  color: #505690;
+}
+
 @media screen and (max-width: 992px) {
   .contact .fa {
     margin-top: 20px; } }
 
 footer {
   background: #eee;
-  margin-top: -5px; }
+  margin-top: -5px;}
   footer section {
     padding: 120px 0;
     font-family: "Inconsolata", sans-serif;
@@ -780,7 +786,7 @@ footer {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    color: #403E3B;
+    color: #505690;
     cursor: pointer;
     -webkit-transition: color 0.3s cubic-bezier(0.35, 0.085, 0.305, 1.005);
     -moz-transition: color 0.3s cubic-bezier(0.35, 0.085, 0.305, 1.005);
@@ -791,7 +797,7 @@ footer {
       color: #bbb; }
   footer .copy {
     margin-top: 30px;
-    color: #bbb;
+    color: #505690;
     font-size: .8em; }
   @media screen and (max-width: 992px) {
     footer section {
@@ -970,7 +976,7 @@ footer {
     -webkit-transform: scale(0.95, 0.95);
     -moz-transform: scale(0.95, 0.95);
     transform: scale(0.95, 0.95);
-    background: #403E3B;
+    background: #6E79A9;
     position: absolute;
     left: 0;
     right: 0;
@@ -998,11 +1004,11 @@ footer {
       border-bottom: 1px solid #777;
       padding-bottom: 20px; }
       .inner .caption .titles .title {
-        text-transform: uppercase; }
+        text-transform: uppercase; font-size: larger;}
       .inner .caption .titles .subtitle {
-        font-size: 14px; }
+        font-size: medium; }
       .inner .caption .titles .title, .inner .caption .titles .subtitle {
-        color: #fff; }
+        color: #fff;}
     @media screen and (max-width: 767px) {
       .inner .caption {
         padding: 0 10px; }
@@ -1127,20 +1133,20 @@ header {
     transition: color 0.25s cubic-bezier(0.35, 0.085, 0.305, 1.005); }
   header.affix {
     padding-top: 0;
-    background: #403E3B; }
+    background: #505690; }
     header.affix * {
-      color: #bbb !important; }
+      color: #fff !important; }
     header.affix .brand {
       padding: 15px 0;
       color: #fff !important; }
     header.affix #navigation {
       margin-top: 0; }
       header.affix #navigation li:hover a {
-        color: #403E3B !important; }
+        color: #505690 !important; }
       header.affix #navigation li ul li:hover a {
         color: #fff !important; }
       header.affix #navigation li:hover ul {
-        padding: 19px 20px; }
+        padding: 20px 20px; }
       header.affix #navigation .trigger .bar {
         background: #fff; }
   @media screen and (max-width: 767px) {
@@ -1269,7 +1275,7 @@ header {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 10px 10px;
+  padding: 8px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -1285,7 +1291,27 @@ header {
   border: 2px solid #888888;
 }
 
-.button1:hover {background-color: #888888; color: white;}
+.button1:hover {
+  background-color:#505690; 
+  border: 2px solid #505690;
+  color: white;
+  text-decoration: none;
+}
+
+.button2 {
+  background-color:#505690; 
+  color: white;
+  border: 2px solid #505690;
+  padding: 5px 15px;
+
+}
+
+.button2:hover {
+  background-color:#fff; 
+  border: 2px solid #505690;
+  color: #505690;
+  text-decoration: none;
+}
 
 .pstyle {
   font-size: .9em;
@@ -1294,3 +1320,10 @@ header {
   color: #888;
   margin: 10px 0 30px 0; 
 }
+
+#contact {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #505690;
+ }
+ 

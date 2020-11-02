@@ -20,11 +20,11 @@
     <script src="javascripts/respond.min.js" type="text/javascript"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="background-image: url(images/projects/general/bg.svg); background-size: cover; height: max-content;">
     <div class='container-fluid'>
       <section class="title-block">
-      <header data-spy='affix'id="menuheader">
-      </header>
+        <header data-spy='affix'id="menuheader">
+        </header>
       </section>
       <!-- <div class='slider'>
         <ul class='slides'>
@@ -90,97 +90,6 @@
           </li>
         </ul>
       </div> -->
-      <!-- <section class='work' id='work'>
-        <div class='row' style="margin-top: 5rem;">
-          <div class='col-md-8'>
-            <div class='pull-left' id='filter-trigger'>Filter</div>
-            <ul id='filters'>
-              <li>
-                <button data-filter='*'>All</button>
-              </li>
-              <li>
-                <button data-filter='.coding'>Coding</button>
-              </li>
-              <li>
-                <button data-filter='.design'>Design</button>
-              </li>
-              <li>
-                <button data-filter='.generative'>Generative</button>
-              </li>
-              <li>
-                <button data-filter='.interface'>Interface</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <ul class='col-3' id='grid'>
-          <li class='item coding design interface'>
-            <a class='inner' href='cleanse.html' style='background:url(images/projects/cleanse/render1.jpg);'>
-              <div class='caption'>
-                <div class='field'>
-                  Coding + Design + Interface
-                </div>
-                <div class='titles'>
-                  <div class='title'>Cleanse</div>
-                  <div class='subtitle'>Hand Hygiene Companion</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class='item coding design interface wide'>
-            <a class='inner' href='perry.html' style='background:url(images/projects/perry/hero3.jpg);'>
-              <div class='caption'>
-                <div class='field'>
-                  Coding + Design + Interface
-                </div>
-                <div class='titles'>
-                  <div class='title'>Perry</div>
-                  <div class='subtitle'>Rehab Reimagined</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class='item coding generative'>
-            <a class='inner' href='genforms.html' style='background:url(images/projects/genforms/test3.gif);'>
-              <div class='caption'>
-                <div class='field'>
-                  Coding + Generative
-                </div>
-                <div class='titles'>
-                  <div class='title'>Generative Forms</div>
-                  <div class='subtitle'>Creating Forms with Sound</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class='item generative interface '>
-            <a class='inner' href='ui.html' style='background:url(images/projects/genUI/transition/transition.gif); background-color: #eeeeee;'>
-              <div class='caption'>
-                <div class='field'>
-                  Generative + Interface
-                </div>
-                <div class='titles'>
-                  <div class='title'>Rethinking User Interface</div>
-                  <div class='subtitle'>Generative UI</div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class='item design generative'>
-            <a class='inner' href='genpatterns.html' style='background:url(images/projects/genpatterns/algo-long.gif);'>
-              <div class='caption'>
-                <div class='field'>
-                  Design + Generative
-                </div>
-                <div class='titles'>
-                  <div class='title'>Generative patterns</div>
-                  <div class='subtitle'>Corporate Logos</div>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section> -->
       <section id='about'>
         <div class="row block">
           <div class='col-md-10 col-md-offset-1'>
@@ -193,7 +102,7 @@
               </h4>              
             </div>
             <div class='text-center'>
-              <p>
+              <p style="color;">
                 Passionate about taking steps towards solving real world issues through innovation and entrepreneurship.
                 Firmly believes in the power of design and technology in creating positive change.
                 Always looking to challenge and improve myself through new and exhilarating experiences.
@@ -212,10 +121,9 @@
         this.period = parseInt(period, 10) || 2000;
         this.txt = '';
         this.tick();
-        this.isDeleting = false;
-    };
+        this.isDeleting = false;};
 
-    TxtType.prototype.tick = function() {
+        TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
 
@@ -244,9 +152,9 @@
         setTimeout(function() {
         that.tick();
         }, delta);
-    };
+        };
 
-    window.onload = function() {
+        window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
@@ -260,106 +168,116 @@
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
-    };
-    </script>
-
-      <section class="title-block">
+        };
+      </script>
+    
+      <section class="title-block"> 
         <div class='row'>
-        <div class="col-md-12 text-center">
-        </div>
-        <div class="col-md-12">
-            <h5>Adobe Creative Suite</h5>
+          <div class="col-md-12">
+              <h5>Adobe Creative Suite</h5>
+              <div class='progress'>
+                <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='95' class='progress-bar' role='progressbar' style='width: 90%; background-color: #505690;'></div>
+              </div>
+            </div>
+          <div class="col-md-12">
+            <h5>Python</h5>
             <div class='progress'>
-              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='95' class='progress-bar progress-bar-danger' role='progressbar' style='width: 90%'></div>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='80' class='progress-bar' role='progressbar' style='width: 85%; background-color:#505690;'></div>
             </div>
           </div>
           <div class="col-md-12">
-          <h5>Python</h5>
-          <div class='progress'>
-            <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='80' class='progress-bar progress-bar-gray' role='progressbar' style='width: 85%'></div>
+            <h5>Javascript</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar' style='width: 70%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>HTML</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar' role='progressbar' style='width: 85%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>CSS</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar' role='progressbar' style='width: 80%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>C++</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='67' class='progress-bar' role='progressbar' style='width: 67%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class='text-center' style="padding: 2rem;">
+              <a class="button button1 anchor" href="resume.html">View Resume</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-12">
-          <h5>Javascript</h5>
-          <div class='progress'>
-            <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar progress-bar-success' role='progressbar' style='width: 70%'></div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <h5>HTML</h5>
-          <div class='progress'>
-            <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar progress-bar-info' role='progressbar' style='width: 85%'></div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <h5>CSS</h5>
-          <div class='progress'>
-            <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar progress-bar-warning' role='progressbar' style='width: 80%'></div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <h5>C++</h5>
-          <div class='progress'>
-            <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='67' class='progress-bar progress-bar-default' role='progressbar' style='width: 67%'></div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class='text-center' style="padding: 2rem;">
-            <a class="button button1 anchor" href="resume.html">View Resume</a>
-          </div>
-        </div>
-      </div>
       </section>
 
-      <section class='contact top-line mobile-center' id='contact'>
-        <div class='block'>
-          <div class='row'>
-            <div class='col-md-4'>
-              <div class='row'>
-                <div class='col-md-2'>
-                  <div class='fa fa-building-o'></div>
-                </div>
-                <div class='col-md-10'>
-                  <p>Singapore</p>
-                </div>
-              </div>
+      <section class='content'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='title-block'>
+              <h3>Featured projects</h3>
             </div>
-            <div class='col-md-4'>
-              <div class='row'>
-                <div class='col-md-2'>
-                  <div class='fa fa-phone'></div>
+          </div>
+        </div>
+        <ul class='col-3' id='grid'>
+          <li class='item'>
+            <a class='inner' href='aws.html' style='background:url(images/projects/dbs/pop-up.jpg);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Generative + Interface + Coding
                 </div>
-                <div class='col-md-10'>
-                  <p>(65) 8298 7130</p>
-                </div>
-              </div>
-            </div>
-            <div class='col-md-4'>
-              <div class='row'>
-                <div class='col-md-2'>
-                  <div class='fa fa-envelope-o'></div>
-                </div>
-                <div class='col-md-10'>
-                  <p><a href='mailto:junpengyeo@gmail.com' style="color: #888888;">junpengyeo@gmail.com</a></p>
+                <div class='titles'>
+                  <div class='title'>AWS ASEAN Build On Hackathon</div>
+                  <div class='subtitle'>Personalised Banking Experience</div>
                 </div>
               </div>
+            </a>
+          </li>
+          <li class='item coding generative'>
+            <a class='inner' href='sia.html' style='background:url(images/projects/sia/QR\ scan1.png);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Interface 
+                </div>
+                <div class='titles'>
+                  <div class='title'>KrisCrew</div>
+                  <div class='subtitle'>Smart In-flight Solution</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class='item generative interface '>
+            <a class='inner' href='provact.html' style='background:url(images/projects/provact/provacthero1.jpg);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Interface
+                </div>
+                <div class='titles'>
+                  <div class='title'>Provact</div>
+                  <div class='subtitle'>Improving Online Interaction</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class='row'>
+          <div class="col-md-12">
+            <div class='text-center' style="padding: 2rem;">
+              <a class="button button1 anchor" href="portfolio.html">View All Projects</a>
             </div>
           </div>
         </div>
       </section>
-      
-      <footer>
-        <section class='text-center'>
-          <div class='social'>
-            <a class='icon fa fa-github' href='https://github.com/junpengyeo/'></a>
-            <a class='icon fa fa-facebook' href='https://www.facebook.com/yjpeng/'></a>
-            <a class='icon fa fa-linkedin' href='https://www.linkedin.com/in/junpengyeo/'></a>
-          </div>
-          <div class='copy'>
-            &copy; 2020 Jun Peng. All Rights Reserved.
-          </div>
-        </section>
+
+      <footer id="contact">
       </footer>
+
     </div>
     <script src="javascripts/jquery.min.js" type="text/javascript"></script>
     <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>

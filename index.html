@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jun Peng</title>
+    <meta charset='utf-8'>
+    <meta content='Description' name=''>
+    <meta content='1 day' name='revisit-after'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="shortcut icon" href="favicon.ico?v=5" type="image/x-icon">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,300italic,100italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 fallbacks -->
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js" type="text/javascript"></script>
+    <script src="javascripts/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body style="background-image: url(images/projects/general/bg.svg); background-size: cover; height: max-content;">
+    <div class='container-fluid'>
+      <section class="title-block">
+        <header data-spy='affix'id="menuheader">
+        </header>
+      </section>
+      <!-- <div class='slider'>
+        <ul class='slides'>
+          <li class='slide'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/perry/hero1.jpg);'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1 style='font-size: 36pt;'>Rehab Reimagined</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class='slide'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/cleanse/render11.jpg);'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1 style='font-size: 36pt;'>Your Hand Hygiene Companion.</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class='slide text-right'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/genUI/img3.gif);'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1  style='font-size: 36pt;'>Redesigning User Interface.</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class='slide dark'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/genforms/Render%201.jpg)'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1 style='font-size: 36pt;'>Generative Forms</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+          <li class='slide'>
+            <section class='jumbotron'>
+              <div class='bg' style='background-image:url(images/projects/genpatterns/logo2.jpg); background-color: #FDFEF9; background-size: 1000pt;'></div>
+              <section>
+                <div class='row'>
+                  <div class='col-md-12 text-center'>
+                    <h1 style='font-size: 36pt;'>Generative Patterns</h1>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </li>
+        </ul>
+      </div> -->
+      <section id='about'>
+        <div class="row block">
+          <div class='col-md-10 col-md-offset-1'>
+            <div class="text-center">
+              <div class="title-block">
+              <h3>Hi There!</h3>
+              </div>
+              <img src="images/projects/general/photo222.jpg" style="width: 50%; border-radius: 50%; "></img>
+              <h4 style="font-size: 20pt; padding: 2rem; line-height: 2rem;" class="typewrite" data-period="2000" data-type='[ "I am Jun Peng.", "I am a Designer.", "I am a Coder.", "I am an Entrepreneur."]'>
+              </h4>              
+            </div>
+            <div class='text-center'>
+              <p style="color;">
+                Passionate about taking steps towards solving real world issues through innovation and entrepreneurship.
+                Firmly believes in the power of design and technology in creating positive change.
+                Always looking to challenge and improve myself through new and exhilarating experiences.
+              </p>
+              <a class="button button1 anchor" href="personalstatement.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;};
+
+        TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+        };
+
+        window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+        };
+      </script>
+    
+      <section class="title-block"> 
+        <div class='row'>
+          <div class="col-md-12">
+              <h5>Adobe Creative Suite</h5>
+              <div class='progress'>
+                <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='95' class='progress-bar' role='progressbar' style='width: 90%; background-color: #505690;'></div>
+              </div>
+            </div>
+          <div class="col-md-12">
+            <h5>Python</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='80' class='progress-bar' role='progressbar' style='width: 85%; background-color:#505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>Javascript</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='70' class='progress-bar' role='progressbar' style='width: 70%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>HTML</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar' role='progressbar' style='width: 85%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>CSS</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='85' class='progress-bar' role='progressbar' style='width: 80%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h5>C++</h5>
+            <div class='progress'>
+              <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='67' class='progress-bar' role='progressbar' style='width: 67%; background-color: #505690;'></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class='text-center' style="padding: 2rem;">
+              <a class="button button1 anchor" href="resume.html">View Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='content'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='title-block'>
+              <h3>Featured projects</h3>
+            </div>
+          </div>
+        </div>
+        <ul class='col-3' id='grid'>
+          <li class='item'>
+            <a class='inner' href='aws.html' style='background:url(images/projects/dbs/pop-up.jpg);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Generative + Interface + Coding
+                </div>
+                <div class='titles'>
+                  <div class='title'>AWS ASEAN Build On Hackathon</div>
+                  <div class='subtitle'>Personalised Banking Experience</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class='item coding generative'>
+            <a class='inner' href='sia.html' style='background:url(images/projects/sia/QR\ scan1.png);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Interface 
+                </div>
+                <div class='titles'>
+                  <div class='title'>KrisCrew</div>
+                  <div class='subtitle'>Smart In-flight Solution</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class='item generative interface '>
+            <a class='inner' href='provact.html' style='background:url(images/projects/provact/provacthero1.jpg);'>
+              <div class='caption'>
+                <div class='field'>
+                  Design + Interface
+                </div>
+                <div class='titles'>
+                  <div class='title'>Provact</div>
+                  <div class='subtitle'>Improving Online Interaction</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class='row'>
+          <div class="col-md-12">
+            <div class='text-center' style="padding: 2rem;">
+              <a class="button button1 anchor" href="portfolio.html">View All Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact">
+      </footer>
+
+    </div>
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <script src="javascripts/tera-slider.js" type="text/javascript"></script>
+    <script src="javascripts/tera-lightbox.js" type="text/javascript"></script>
+    <script src="javascripts/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascripts/validation.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.placeholder.js" type="text/javascript"></script>
+    <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
+    <script src="javascripts/functions.js" type="text/javascript"></script>
+    <script src="javascripts/content.js" type="text/javascript"></script>
+  </body>
+</html>
